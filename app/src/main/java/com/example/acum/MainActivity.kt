@@ -73,7 +73,7 @@ fun MainScreen(
     val weekCount by viewModel.weekCount.observeAsState(0)
     val monthCount by viewModel.monthCount.observeAsState(0)
     val yearCount by viewModel.yearCount.observeAsState(0)
-    val lastClickTimeAgo by viewModel.lastClickTimeAgo.observeAsState("还未点击过")
+    val lastClickTimeAgo by viewModel.lastClickTimeAgo.observeAsState("还未起飞过")
     
     Column(
         modifier = modifier
@@ -91,7 +91,7 @@ fun MainScreen(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = "点击计数器",
+                text = "起飞计数器",
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.primary
@@ -123,7 +123,7 @@ fun MainScreen(
                 )
             ) {
                 Text(
-                    text = "点击",
+                    text = "起飞",
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.White
@@ -133,7 +133,7 @@ fun MainScreen(
             Spacer(modifier = Modifier.height(16.dp))
             
             Text(
-                text = "上次点击：$lastClickTimeAgo",
+                text = "上次起飞：$lastClickTimeAgo",
                 fontSize = 16.sp,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center

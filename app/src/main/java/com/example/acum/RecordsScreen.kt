@@ -34,7 +34,7 @@ fun RecordsScreen(
     Column(modifier = Modifier.fillMaxSize()) {
         // 顶部应用栏
         TopAppBar(
-            title = { Text("点击记录 (${allRecords.size}条)") },
+            title = { Text("起飞记录 (${allRecords.size}条)") },
             navigationIcon = {
                 IconButton(onClick = onNavigateBack) {
                     Icon(Icons.Default.ArrowBack, contentDescription = "返回")
@@ -60,12 +60,12 @@ fun RecordsScreen(
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(
-                        text = "暂无点击记录",
+                        text = "暂无起飞记录",
                         fontSize = 18.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "去主页点击按钮开始记录吧！",
+                        text = "去主页起飞按钮开始记录吧！",
                         fontSize = 14.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.padding(top = 8.dp)

@@ -107,12 +107,12 @@ class ClickDataManager(context: Context) {
     fun getLastClickTimeAgo(): String {
         val records = getClickRecords()
         if (records.isEmpty()) {
-            return "还未点击过"
+            return "还未起飞过"
         }
         
         val lastClick = records.maxByOrNull { it.timestamp }
         if (lastClick == null) {
-            return "还未点击过"
+            return "还未起飞过"
         }
         
         val now = System.currentTimeMillis()
